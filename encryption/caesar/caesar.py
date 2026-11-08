@@ -55,7 +55,7 @@ def decode_ceasar_no_key(input: str) -> str:
 
     res = ""
 
-    for i in range(1, 26):
+    for i in range(1, 27):
     
         output = []
         
@@ -72,11 +72,11 @@ def decode_ceasar_no_key(input: str) -> str:
                 output.append(decoded_char)
 
         decoded_str = "".join(output)
-        res += f"Offset of {i}: " + decoded_str + "\n"
+        res += f"Offset of {i}: " + decoded_str
 
     return res
 
 
 print(encode_ceasar("Hello WoRLD!", 3))
 print(decode_ceasar_key("khoor zruog!", 3))
-print(decode_ceasar_no_key("khoor zrong!"))
+print(decode_ceasar_no_key("khoor z"))
