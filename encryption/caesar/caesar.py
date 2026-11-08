@@ -65,7 +65,7 @@ def decode_ceasar_no_key(input: str) -> str:
             else:
 
                 if char.isupper():
-                    decoded_har = chr((ord(char) - ord('A') - i) % 26 + ord('A'))
+                    decoded_char = chr((ord(char) - ord('A') - i) % 26 + ord('A'))
                 if char.islower():
                     decoded_char = chr((ord(char) - ord('a') - i) % 26 + ord('a'))
 
